@@ -16,19 +16,19 @@ using namespace std;
     long long int key;
     string value;
 
-map <long long int, string> params;
+map <long long int, string> p;
 while ( fin >> value >> key ) {
-    params[key] = value; // input them into the map
+    p[key] = value; // input them into the map
 }
 
     map<long long int,string>::iterator itr;
-    if(params.count(s)==0)
+    if(p.count(s)==0)
         cout<<"Contact do not exist"<<endl;
     else
-   params.erase(s);
+   p.erase(s);
 
 fout.open("contact.txt",ios::out);
-    for(itr = params.find(0);itr!=params.end();itr++)
+    for(itr = p.find(0);itr!=p.end();itr++)
     fout<<itr->second<<" "<<itr->first<<endl;
 
     //<<" " <<itr->second<<endl;

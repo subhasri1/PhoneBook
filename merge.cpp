@@ -6,7 +6,7 @@
 #include <string.h>
 #include <map>
 using namespace std;
-void Display(){
+void Merge(string s){
     ifstream fin;
         ofstream fout;
             fin.open("list1.txt");
@@ -27,8 +27,8 @@ void Display(){
                                              fout.close();
                                              }
 
-                                             int main(){
-
-                                               Display();
+                                            /* int main(){
+                                                string s=filename;
+                                               Merge(s);
                                                return 0;
-                                               }
+                                               }*/

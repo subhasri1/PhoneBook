@@ -6,7 +6,7 @@
 #include <string.h>
 #include <map>
 using namespace std;
-void Delete(string s){
+void DeleteByName(string s){
     ifstream fin;
     ofstream fout;
     fin.open("list1.txt");

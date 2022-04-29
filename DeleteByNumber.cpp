@@ -1,11 +1,7 @@
 #include <iostream>
-#include <sstream>
-#include <fstream>
-#include <string>
-#include <stdio.h>
-#include <string.h>
-#include <map>
 using namespace std;
+#include "Delete.h";
+
 //This code is to delete data from file by number..
   void DeleteByNumber(long long int s){
     ifstream fin;
@@ -36,10 +32,10 @@ fout.open("contact.txt",ios::out);
 //fin.close();
 fout.close();
 }
-/*
+
 int main(){
   long long int d;
   cin>>d;
   DeleteByNumber(d);
 return 0;
-} */
+}
